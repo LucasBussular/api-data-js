@@ -1,0 +1,52 @@
+/* AULA 01 ...................................................................................................................................
+
+Síncrono e assíncrono: 
+    No sistema Síncrono o JS executa uma tarefa após a outra (por padrão, JS é um sistema síncrono)
+    No sistema assíncrono, há tarefas executadas em "segundo plano"
+
+Task Queue: fila de tarefas esperando para serem executadas.
+    Podemos enviar uma função para a task queue com o método setTimeOut(função, tempo) > tempo em milisegundos
+
+AULA 02 ...................................................................................................................................
+
+Callback: funções que são enviadas como parâmetro para outras funções. O objetivo principal do callback é permitir que uma função seja executada 
+    após a conclusão de outra função, geralmente uma operação assíncrona, como uma solicitação de rede.
+
+FetchAPI: método para fazer requisições de um servidor usando uma FetchAPI
+
+Promise: Em JavaScript, uma Promise é um objeto que representa um valor que pode estar disponível agora, no futuro ou nunca. Promises são 
+    frequentemente usadas para lidar com operações assíncronas, como solicitações de rede, para as quais o resultado não está imediatamente disponível.
+    Anatomia de uma promise:
+
+        // const entrega = new Promise(function 
+        // (resolve, reject) {
+        //     if (resolve == true) {
+        //         resolve('Ana recebeu a encomenda.')
+        //     } else {
+        //         reject('Não foi possível receber a encomenda.')
+        //     }
+        // })
+
+AULA 03 ...................................................................................................................................
+
+Then e JSON: após receber as informações solicitadas do servidor, precisamos tratá-la para ser lida pelo JS. 
+    Para isso, usamos o .then(resposta => resposta.json()), que transforma os dados de bytes para json.
+
+AULA 04 ...................................................................................................................................
+
+Async Await:Uma função async é uma função em JavaScript que é executada de forma assíncrona, o que significa que o código dentro dela pode 
+    ser executado em segundo plano enquanto o resto do programa continua funcionando normalmente.
+    
+    async function buscaEndereco() {
+                        // o await só pode ser usado dentro de uma função async  
+        var consultaCEP = await fetch('https://viacep.com.br/ws/01001000/json/')
+
+        console.log(consultaCEP)
+    }
+
+AULA 05 ...................................................................................................................................
+
+Consulta dinâmica: 
+
+*/
+
